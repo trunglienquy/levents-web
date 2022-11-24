@@ -44,3 +44,34 @@ btnSubmenuUp.addEventListener("click", function(){
     btnSubmenuUp.style.display = "none"
 
 })
+
+// PAGING
+let pagingItem = document.getElementsByClassName("paging-item");
+let currPage = 1;
+
+function activeLink(){
+    for (l of pagingItem){
+        l.classList.remove("active-paging")
+    }
+    event.target.classList.add("active-paging")
+    currPage = event.target.value
+    console.log(currPage)
+}
+function btnPrev(){
+    if (currPage > 1){
+        for (l of pagingItem){
+            l.classList.remove("active-paging")
+        }
+        currPage--;
+        pagingItem[currPage].classList.add("active-paging")
+    }
+}
+function btnNext(){
+    if (currPage <= 4){
+        for (l of pagingItem){
+            l.classList.remove("active-paging")
+        }
+        currPage++;
+        pagingItem[currPage].classList.add("active-paging")
+    }
+}
