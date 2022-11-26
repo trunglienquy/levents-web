@@ -1,9 +1,11 @@
 const btn = document.querySelectorAll(".container-product .button-submit")
 let selection = document.querySelector('size-shirt');
 const hideInformationBag = document.querySelector('.notification-bag')
+let flag = false;
 
 btn.forEach(function(button,index){
     button.addEventListener("click",function(event){
+        flag = true
         var btnItem = event.target
         var product = btnItem.parentElement
         var productImg = document.querySelector(".img-product img").src
@@ -12,6 +14,7 @@ btn.forEach(function(button,index){
         var sizeName = document.getElementById('size-shirt')
         var textSizeName = sizeName.options[sizeName.selectedIndex].text
         document.querySelector(".notification-buy").classList.remove("hide-notification-buy")
+        document.querySelector(".container-add-to-cart").classList.remove("hide-add-to-card")
         addCart(productImg, productPrice, productName, textSizeName)
     })
 })
@@ -49,6 +52,20 @@ showItemBag.addEventListener("click", function(){
 hideItemBag.addEventListener("click", function(){
     document.querySelector(".container-add-to-cart").classList.add("hide-add-to-card")
 })
+
+// pay-product
+const payProduct = document.querySelector(".pay-btn")
+payProduct.addEventListener("click", function(){
+    if (flag == false){
+        document.querySelector(".notification-pay").classList.remove("hide-notification-pay")
+    }
+    else{
+        document.querySelector(".notification-pay").classList.add("hide-notification-pay")
+        location.href = "../pay-product/pay.html"
+    }
+})
+
+
 
 
 

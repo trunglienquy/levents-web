@@ -359,6 +359,27 @@ img.product-item-font:hover{
     margin-top: 50px;
     font-size: 15px;
 }
+.pay-product{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.pay-product button{
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 80px;
+    background-color: #000;
+    margin: 0 auto;
+}
+.notification-pay{
+    display: block;
+    color: red;
+    text-align: center;
+    margin-top: 5px;
+}
+.hide-notification-pay{
+    display: none;
+}
 .needPay{
     float: right;
 }

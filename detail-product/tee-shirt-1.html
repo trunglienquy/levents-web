@@ -113,6 +113,10 @@
             <p class="information-notification">Hiện tại bạn không có đơn hàng nào</p>
         </div>
         <div class="atc-bag"></div>
+        <div class="pay-product">
+            <button type="submit" class="pay-btn">Thanh toán</button>
+            <p class="notification-pay hide-notification-pay"> <i>Bạn chưa có sản phẩm nào trong giỏ hàng!</i> </p>
+        </div>
         <div class="total-atc">
             <h3 class="needPay"></h3>
             <h3 class="total-product">Tổng: &nbsp;</h3>
@@ -123,7 +127,15 @@
 
     <div class="container-product">
         <div class="img-product">
-            <img src="../img/all1-bf.jpg" alt="">
+            <img src="../img/all1-bf.jpg" alt="" id="productImg">
+            <div class="small-image-product">
+                <img src="./img/child1.jpg" alt="" width="100%" class="small-product-child">
+                <img src="./img/child2.jpg" alt="" width="100%" class="small-product-child">
+                <img src="./img/child3.jpg" alt="" width="100%" class="small-product-child">
+                <img src="./img/child4.jpg" alt="" width="100%" class="small-product-child">
+                <img src="./img/child5.jpg" alt="" width="100%" class="small-product-child">
+                <img src="./img/child6.jpg" alt="" width="100%" class="small-product-child">
+            </div>
         </div>
         <div class="detail-product">
             <div class="col-product boil-title name-product"> <h3>LEVENTS® | DORAEMON POPULAR CAT TEE</h3> </div>
@@ -304,5 +316,28 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../js/addCard.js"></script>
     <script src="../js/searchMain.js"></script>
+    <script>
+        //product-child
+        var productImg = document.getElementById("productImg")
+        var productChild = document.getElementsByClassName("small-product-child")
+        productChild[0].onclick = function(){
+            productImg.src = productChild[0].src
+        }
+        productChild[1].onclick = function(){
+            productImg.src = productChild[1].src
+        }
+        productChild[2].onclick = function(){
+            productImg.src = productChild[2].src
+        }
+        productChild[3].onclick = function(){
+            productImg.src = productChild[3].src
+        }
+        productChild[4].onclick = function(){
+            productImg.src = productChild[4].src
+        }
+        productChild[5].onclick = function(){
+            productImg.src = productChild[5].src
+        }
+    </script>
 </body>
 </html>
