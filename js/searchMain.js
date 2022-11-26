@@ -75,3 +75,10 @@ function btnNext(){
         pagingItem[currPage].classList.add("active-paging")
     }
 }
+
+// hide submit home page
+const btnSubmitHomePage = document.querySelector(".col-sp-user-4")
+const notificationBtnSHP = document.querySelector(".notification-sp-user")
+btnSubmitHomePage.addEventListener("click", function(){
+    notificationBtnSHP.classList.remove("hide-notification-sp-user")
+})
