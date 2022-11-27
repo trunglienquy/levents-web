@@ -21,7 +21,6 @@ body{
     max-width: 1969px;
     margin: 0 auto;
 }
-
 /* MENU */
 
 .navbar{
@@ -172,7 +171,7 @@ body{
     background-color: #fff;
     opacity: 0;
     display: block;
-    z-index: 1;
+    z-index: -1;
     transition: .8s ease-out;
 }
 .dropdown-menu-mobile{
@@ -213,7 +212,7 @@ body{
     margin-bottom: 20px;
 }
 
-/* COLLECTION DORAEMON */
+/* COLLECTION-SUMMER */
 
 .banner-collection img{
     width: 100%;
@@ -430,19 +429,33 @@ footer{
         width: 500px;
     }
 
-    /* SEARCH-BOX */
-    #search-text {
-        width: 60rem;
-    }
-
     /* COLLECTION DORAEMON */
+    .container{
+        padding: 0 100px;
+    }
 
     .sub-collection{
         max-width: 40rem;
     }
     .image-collection-child{
-        max-width: 350px;
+        max-width: 500px;
     }
+    /* FOOTER */
+    footer{
+        height: 70vh;
+    }
+    .store{
+        width: 20rem
+    }
+    .introduce-store-left{
+        width: 15rem;
+    }
+
+    /* SEARCH-BOX */
+    #search-text {
+        width: 60rem;
+    }
+
     /* FOOTER */
     footer{
         height: 70vh;
