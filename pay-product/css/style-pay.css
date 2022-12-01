@@ -429,6 +429,46 @@ input[type=number]::-webkit-inner-spin-button {
 .hide-cates{
     display: none;
 }
+.remove-product{
+    width: 40rem;
+    text-align: center;
+}
+.bnt-remove-product{
+    cursor: pointer;
+    width: 200px;
+    background-color: #000;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    transition: all .3s;
+}
+.bnt-remove-product:hover{
+    background-color: #888888;
+}
+.sub-remove-product{
+    display: block;
+    margin-top: 20px;
+    transition: all .3s;
+}
+.btn3{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80px;
+    border: none;
+    outline: none;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    transition: all .3s;
+    margin-left: 15px;
+}
+.btn3:hover{
+    background-color: #888888;
+}
+.hide-remove{
+    display: none;
+}
 
 /* FOOTER */
 

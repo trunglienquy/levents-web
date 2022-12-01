@@ -171,6 +171,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="remove-product">
+                    <div class="bnt-remove-product">
+                        <p>Xóa</p>
+                    </div>
+                    <div class="sub-remove-product hide-remove">
+                        <p>Bạn có chắc muốn <strong>XÓA</strong> sản phẩm này</p>
+                        <button class="yes btn3" id="cYes">Có</button>
+                        <button class="no btn3" id="cNo">Không</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -326,6 +336,17 @@
         pay2.addEventListener("click", function(){
             subPay2.classList.remove("hide-cates")
             subPay1.classList.add("hide-cates")
+        })
+
+        // remove product
+        const btnRemove = document.querySelector(".bnt-remove-product")
+        const showRemove = document.querySelector(".sub-remove-product")
+        const choiceNo = document.getElementById("cNo")
+        btnRemove.addEventListener("click", function(){
+            showRemove.classList.remove("hide-remove")
+        })
+        choiceNo.addEventListener("click", function(){
+            showRemove.classList.add("hide-remove")
         })
     </script>
 </body>
