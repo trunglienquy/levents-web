@@ -52,7 +52,7 @@
                             <a href="./menu-product/all-product.html">Tất cả</a>
                         </li>
                         <li class="dropdown-menu-item">
-                            <a href="./menu-product/new-arrival.html">New Arrival</a>
+                            <a href="./menu-product/new-arrival.html">Sản phẩm mới</a>
                         </li>
                         <li class="dropdown-menu-item">
                             <a href="./menu-product/tee-shirt.html">Áo thun</a>
@@ -61,45 +61,20 @@
                             <a href="./menu-product/pant.html">Quần</a>
                         </li>
                         <li class="dropdown-menu-item">
-                            <a href="#">Ba-lo</a>
+                            <a href="./menu-product/balo.html">Ba-lo</a>
                         </li>
                         <li class="dropdown-menu-item">
-                            <a href="#">Outwear</a>
+                            <a href="./menu-product/outwear.html">Outwear</a>
                         </li>
                         <li class="dropdown-menu-item">
-                            <a href="#">Phụ kiện</a>
+                            <a href="./menu-product/pk.html">Phụ kiện</a>
                         </li>
                     </ul>
                 </div>
-                <!-- <div class="dropdown-menu-mobile">
-                    <ul class="dropdown-menu-lists">
-                        <li class="dropdown-menu-item">
-                            <a href="./all-product.html">Tất cả</a>
-                        </li>
-                        <li class="dropdown-menu-item">
-                            <a href="#">New Arrival</a>
-                        </li>
-                        <li class="dropdown-menu-item">
-                            <a href="#">Áo thun</a>
-                        </li>
-                        <li class="dropdown-menu-item">
-                            <a href="#">Quần</a>
-                        </li>
-                        <li class="dropdown-menu-item">
-                            <a href="#">Ba-lo</a>
-                        </li>
-                        <li class="dropdown-menu-item">
-                            <a href="#">Outwear</a>
-                        </li>
-                        <li class="dropdown-menu-item">
-                            <a href="#">Phụ kiện</a>
-                        </li>
-                    </ul>
-                </div> -->
             </li>
             <li class="navbar-menu_item navbar-menu_item-underline navbar-menu_item-active"><a href="./navbar-sale-off/sale-off.html">Sale-off</a></li>
-            <li class="navbar-menu_item navbar-menu_item-underline"><a href="./navbar-collection/collection.html">Collection</a></li>
-            <li class="navbar-menu_item navbar-menu_item-underline"><a href="./navbar-about/about.html">About</a></li>
+            <li class="navbar-menu_item navbar-menu_item-underline"><a href="./navbar-collection/collection.html">Bộ sưu tập</a></li>
+            <li class="navbar-menu_item navbar-menu_item-underline"><a href="./navbar-about/about.html">Về chúng tôi</a></li>
         </ul>
     </div>
 
@@ -202,14 +177,14 @@
         </div>
     </div>
     <div class="see-more" onclick="">
-        <a href="./menu-all-product/all-product.html" class="see-more-title">Xem Thêm</a>
+        <a href="./menu-product/all-product.html" class="see-more-title">Xem Thêm</a>
     </div>
 
     <!-- ADD-TO-CARD -->
     <div class="container-add-to-cart hide-add-to-card" id="show-itemBag">
         <div class="title-atc">
-            <h3 class="name-cart">Gỏi Hàng</h3>
-            <p class="close-atc">Close</p>
+            <h3 class="name-cart">Giỏ Hàng</h3>
+            <p class="close-atc">Đóng</p>
         </div>
         <div class="notification-bag">
             <p class="information-notification">Hiện tại bạn không có đơn hàng nào</p>
@@ -367,10 +342,10 @@
                             <p class="title-light title-boid-size">Blog</p>
                         </li>
                         <li class="contract-detail social-media">
-                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                            <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
-                            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                            <a href="https://www.facebook.com/profile.php?id=100010803722460"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="https://www.instagram.com/minhtrung_sler/"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="https://www.tiktok.com/@09062003hn"><ion-icon name="logo-tiktok"></ion-icon></a>
+                            <a href="https://www.youtube.com/channel/UCDOHmjIGsiF64GNKpPP_9lw"><ion-icon name="logo-youtube"></ion-icon></a>
                         </li>
                 </div>
             </div>
@@ -380,5 +355,13 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="./js/addCard.js"></script>
     <script src="./js/searchMain.js"></script>
+    <script>
+        // hide submit home page
+        const btnSubmitHomePage = document.querySelector(".col-sp-user-4")
+        const notificationBtnSHP = document.querySelector(".notification-sp-user")
+        btnSubmitHomePage.addEventListener("click", function(){
+            notificationBtnSHP.classList.remove("hide-notification-sp-user")
+        })
+    </script>
 </body>
 </html>

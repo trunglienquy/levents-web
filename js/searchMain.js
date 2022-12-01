@@ -76,9 +76,15 @@ function btnNext(){
     }
 }
 
-// hide submit home page
-const btnSubmitHomePage = document.querySelector(".col-sp-user-4")
-const notificationBtnSHP = document.querySelector(".notification-sp-user")
-btnSubmitHomePage.addEventListener("click", function(){
-    notificationBtnSHP.classList.remove("hide-notification-sp-user")
-})
+function getInfoUser(){
+    const accName = "user1"
+    const accPass = "123"
+    const userName = document.getElementById("nameUser").value
+    const userPass = document.getElementById("passUser").value
+    if (userName == accName && userPass == accPass){
+        alert("true")
+    }
+    else{
+        alert("false")
+    }
+}
