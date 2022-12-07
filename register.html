@@ -36,7 +36,26 @@
         <div class="search-close"><ion-icon name="close-outline"></ion-icon></div>
         <div class="search-buttons">
             <input type="text" id="search-text">
-            <input type="submit" value="Search" id="search-btn">
+            <input type="submit" value="Search" id="search-btn" onclick="location.href='./search-result/search-result.html'">
+        </div>
+        <div class="advance-search">
+            <select name="" id="categories">
+                <option value="default" selected disabled>Loại</option>
+                <option value="all" class="col-op">Tất cả</option>
+                <option value="new" class="col-op">Sản phẩm mới</option>
+                <option value="tee" class="col-op">Áo thun</option>
+                <option value="pant" class="col-op">Quần</option>
+                <option value="balo" class="col-op">Ba lô</option>
+                <option value="outwear" class="col-op">Áo khoác</option>
+                <option value="pk" class="col-op">Phụ kiện </option>
+            </select>
+            <select name="" id="price">
+                <option value="default" class="col-op">Giá</option>
+                <option value="100" class="col-op">Dưới 100.000 vnđ</option>
+                <option value="100+" class="col-op">Từ 200.000 vnđ - 500.000 vnđ</option>
+                <option value="100++" class="col-op">Trên 500.000 vnđ</option>
+            </select>
+            <button id="submitAdvance">Xác nhận</button>
         </div>
     </div>
 
@@ -53,7 +72,7 @@
                             <a href="./menu-product/all-product.html">Tất cả</a>
                         </li>
                         <li class="dropdown-menu-item">
-                            <a href="./menu-product/new-arrival.html">New Arrival</a>
+                            <a href="./menu-product/new-arrival.html">Sản phẩm mới</a>
                         </li>
                         <li class="dropdown-menu-item">
                             <a href="./menu-product/tee-shirt.html">Áo thun</a>
@@ -65,7 +84,7 @@
                             <a href="./menu-product/balo.html">Ba-lo</a>
                         </li>
                         <li class="dropdown-menu-item">
-                            <a href="./menu-product/outwear.html">Outwear</a>
+                            <a href="./menu-product/outwear.html">Áo khoác</a>
                         </li>
                         <li class="dropdown-menu-item">
                             <a href="./menu-product/pk.html">Phụ kiện</a>

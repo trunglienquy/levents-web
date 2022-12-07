@@ -4,6 +4,8 @@ const searchBox = document.querySelector(".search-box")
 const showMenuMobile = document.querySelector(".menu-mobile")
 const hiddenMenuMobile = document.querySelector(".menu-mobile-close")
 const menuMobile = document.querySelector(".navbar-menu")
+const input = document.getElementById("search-text")
+
 
 const btnSubmenu = document.querySelector(".arrow-down")
 const btnSubmenuUp = document.querySelector(".arrow-up")
@@ -18,6 +20,11 @@ hideSearch.addEventListener("click", function(){
     searchBox.classList.add("hide-search")
     searchBox.style.zIndex = "-100"
 
+})
+input.addEventListener("keypress", function(event){
+    if (event.key === "Enter"){
+        document.getElementById("search-btn").click()
+    }
 })
 // menu-mobile
 // showMenuMobile.addEventListener("click", function(){
@@ -82,6 +89,7 @@ function getInfoUser(){
     const userName = document.getElementById("nameUser").value
     const userPass = document.getElementById("passUser").value
     if (userName == accName && userPass == accPass){
+        flagLogin = true
         alert("true")
     }
     else{

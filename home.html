@@ -35,7 +35,26 @@
         <div class="search-close"><ion-icon name="close-outline"></ion-icon></div>
         <div class="search-buttons">
             <input type="text" id="search-text">
-            <input type="submit" value="Search" id="search-btn">
+            <input type="submit" value="Search" id="search-btn" onclick="location.href='./search-result/search-result.html'">
+        </div>
+        <div class="advance-search">
+            <select name="" id="categories">
+                <option value="default" selected disabled>Loại</option>
+                <option value="all" class="col-op">Tất cả</option>
+                <option value="new" class="col-op">Sản phẩm mới</option>
+                <option value="tee" class="col-op">Áo thun</option>
+                <option value="pant" class="col-op">Quần</option>
+                <option value="balo" class="col-op">Ba lô</option>
+                <option value="outwear" class="col-op">Áo khoác</option>
+                <option value="pk" class="col-op">Phụ kiện </option>
+            </select>
+            <select name="" id="price">
+                <option value="default" class="col-op">Giá</option>
+                <option value="100" class="col-op">Dưới 100.000 vnđ</option>
+                <option value="100+" class="col-op">Từ 200.000 vnđ - 500.000 vnđ</option>
+                <option value="100++" class="col-op">Trên 500.000 vnđ</option>
+            </select>
+            <button id="submitAdvance">Xác nhận</button>
         </div>
     </div>
 
@@ -64,7 +83,7 @@
                             <a href="./menu-product/balo.html">Ba-lo</a>
                         </li>
                         <li class="dropdown-menu-item">
-                            <a href="./menu-product/outwear.html">Outwear</a>
+                            <a href="./menu-product/outwear.html">Áo khoác</a>
                         </li>
                         <li class="dropdown-menu-item">
                             <a href="./menu-product/pk.html">Phụ kiện</a>
@@ -77,7 +96,6 @@
             <li class="navbar-menu_item navbar-menu_item-underline"><a href="./navbar-about/about.html">Về chúng tôi</a></li>
         </ul>
     </div>
-
     <!-- BANNER -->
 
     <div class="banner">
@@ -94,6 +112,8 @@
     <!-- PRODUCT -->
 
     <h2 class="name-intro">BỘ SƯU TẬP MỚI</h2>
+    
+
     <div class="product">
         <div class="product-row">
             <a href="./detail-product/tee-shirt-1.html">
@@ -355,6 +375,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="./js/addCard.js"></script>
     <script src="./js/searchMain.js"></script>
+    <script src="./js/serachResult.js"></script>
     <script>
         // hide submit home page
         const btnSubmitHomePage = document.querySelector(".col-sp-user-4")
